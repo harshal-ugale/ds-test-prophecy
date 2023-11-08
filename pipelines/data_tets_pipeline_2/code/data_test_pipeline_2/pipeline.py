@@ -2,10 +2,10 @@ from pyspark.sql import *
 from pyspark.sql.functions import *
 from pyspark.sql.types import *
 from prophecy.utils import *
-from data_tets_pipeline_2.config.ConfigStore import *
-from data_tets_pipeline_2.udfs.UDFs import *
+from data_test_pipeline_2.config.ConfigStore import *
+from data_test_pipeline_2.udfs.UDFs import *
 from prophecy.utils import *
-from data_tets_pipeline_2.graph import *
+from data_test_pipeline_2.graph import *
 
 def pipeline(spark: SparkSession) -> None:
     df_input_data_set = input_data_set(spark)

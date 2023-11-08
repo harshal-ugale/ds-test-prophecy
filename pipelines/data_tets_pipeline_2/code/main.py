@@ -1,3 +1,3 @@
-from data_tets_pipeline_2.pipeline import main
+from data_test_pipeline_2.pipeline import main
 
 main()

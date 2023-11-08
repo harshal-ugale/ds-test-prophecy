@@ -3,8 +3,8 @@ from pyspark.sql.functions import *
 from pyspark.sql.types import *
 from prophecy.utils import *
 from prophecy.libs import typed_lit
-from data_tets_pipeline_2.config.ConfigStore import *
-from data_tets_pipeline_2.udfs.UDFs import *
+from data_test_pipeline_2.config.ConfigStore import *
+from data_test_pipeline_2.udfs.UDFs import *
 
 def input_data_set(spark: SparkSession) -> DataFrame:
     return spark.read\

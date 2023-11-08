@@ -7,7 +7,7 @@
       "editableConfig" : true
     },
     "id" : "1",
-    "uri" : "pipelines/workflow",
+    "uri" : "pipelines/data_tets_pipeline_2",
     "language" : "python",
     "fabricId" : "6419",
     "frontEndLanguage" : "sql",
@@ -59,7 +59,7 @@
       "enabled" : false,
       "value" : 1000
     },
-    "topLevelPackage" : "data_tets_pipeline_2",
+    "topLevelPackage" : "data_test_pipeline_2",
     "configurationVersion" : "v1"
   },
   "connections" : [ {
