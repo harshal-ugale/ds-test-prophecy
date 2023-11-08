@@ -11,6 +11,21 @@ buildSystemDetails:
   author: null
   createdAt: '2023-10-31 13:30:35'
 pipelines:
+  pipelines/test-prophecy-git:
+    name: test-prophecy-git
+    description: testing the connection with git
+    author: harshal@cloudaeon.net
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2023-10-31 13:30:35'
+    datasets:
+      inputs:
+      - datasets/churn_dataset
+      outputs:
+      - datasets/churn_limited_data
+    subgraphs: []
+    dependencies: {}
   pipelines/data_tets_pipeline_2:
     name: data_tets_pipeline_2
     description: ''
@@ -27,6 +42,32 @@ pipelines:
     subgraphs: []
     dependencies: {}
 datasets:
+  datasets/churn_dataset:
+    name: churn_dataset
+    description: ''
+    author: harshal@cloudaeon.net
+    createdAt: '2023-11-02 10:25:38'
+    mode: batch
+    physicalDatasets:
+      dev_ds:
+        fabricId: 6419
+        datasetType: File
+        description: ''
+        author: harshal@cloudaeon.net
+        createdAt: '2023-11-02 10:25:38'
+  datasets/churn_limited_data:
+    name: churn_limited_data
+    description: ''
+    author: harshal@cloudaeon.net
+    createdAt: '2023-11-05 09:32:43'
+    mode: batch
+    physicalDatasets:
+      dev_ds:
+        fabricId: 6419
+        datasetType: File
+        description: ''
+        author: harshal@cloudaeon.net
+        createdAt: '2023-11-05 09:32:43'
   datasets/input_data_set:
     name: input_data_set
     description: ''
@@ -61,7 +102,7 @@ gemContainer:
   gems: {}
 functions:
   author: null
-  createdAt: '2023-11-05 09:47:52'
+  createdAt: '2023-10-31 13:30:35'
   udfs: {}
   udafs: {}
   expressions: {}
